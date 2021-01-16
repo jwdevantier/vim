@@ -1,3 +1,6 @@
+" load better defaults -- allows us to override settings later
+runtime! vim-better-defaults.vim
+
 " install vim plug if missing
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -8,13 +11,10 @@ endif
 call plug#begin('~/.local/share/nvim/bundle')
 " colorscheme
 Plug 'morhetz/gruvbox'
+Plug 'overcache/NeoSolarized'
 " better bottom bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-" lots of standard tweaks (line numbers, relative numbers etc)
-" see GH for details.
-Plug 'liuchengxu/vim-better-default'
 
 Plug 'jiangmiao/auto-pairs'
 " colorize hex codes 
@@ -56,8 +56,15 @@ nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
 nnoremap <silent> <localleader> :<c-u>WhichKey ','<CR>
 set timeoutlen=300 " reduce time taken until help is shown
 
-colorscheme gruvbox
-let g:airline_theme='gruvbox'
+" ---- theming
+" colorscheme gruvbox
+" let g:airline_theme='gruvbox'
+set termguicolors
+colorscheme NeoSolarized
+set background=light
+let g:airline_theme='solarized'
+
+" airline tweaks -- show buffer list
 let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#fnamemode=':t'
 
