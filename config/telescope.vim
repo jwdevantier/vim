@@ -6,8 +6,11 @@
 " Plug 'nvim-telescope/telescope.nvim'
 "
 
-" ! fg requires ripgrep (binary 'rg') installed on system
-
+" fg requires ripgrep, ff requires fd (fd-find)
+" $ sudo apt install ripgrep fd-find
+" 
+" Be sure to add `alias fd=fdfind` to your shell init file
+"
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
