@@ -9,9 +9,10 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.local/share/nvim/bundle')
-" colorscheme
+" colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'overcache/NeoSolarized'
+
 " better bottom bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -33,6 +34,9 @@ Plug 'liuchengxu/vim-which-key'
 
 " conqueror of completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" syntax highlighting etc for a wealth of languages
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
