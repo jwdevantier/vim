@@ -38,6 +38,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " syntax highlighting etc for a wealth of languages
 Plug 'sheerun/vim-polyglot'
 
+" support for svelte, the JS preprocessor framework thingie.
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
+
 call plug#end()
 
 " explicitly set python 3 provider

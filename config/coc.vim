@@ -26,6 +26,8 @@ let g:coc_global_extensions = [
     \ 'coc-git',
     \ 'coc-pyright',
     \ 'coc-ultisnips',
+    \ 'coc-tsserver',
+    \ 'coc-svelte',
   \ ]
 "
 " -----------------------------------------------------------------------
