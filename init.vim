@@ -49,6 +49,10 @@ Plug 'sheerun/vim-polyglot'
 " support for svelte, the JS preprocessor framework thingie.
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
+" conjure lisp plugin (clojure, scheme, racket, cl)
+" (would recommend looking into vlime for cl)
+Plug 'Olical/conjure', {'tag': 'v4.12.0'}
+
 call plug#end()
 
 " explicitly set python 3 provider
