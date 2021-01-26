@@ -1,6 +1,14 @@
 " load better defaults -- allows us to override settings later
 runtime! vim-better-defaults.vim
 
+" source a file iff. it exists and is readable
+" example: SourceIfExists("~/.config/nvim/overrides.vim")
+function! SourceIfExists(file)
+  if filereadable(expand(a:file))
+    exe 'source' a:file
+  endif
+endfunction
+
 " install vim plug if missing
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
@@ -87,3 +95,6 @@ nmap <leader>1 :bp<CR>
 nmap <leader>2 :bn<CR>
 " close
 "nmap <C-w> :bd<CR>
+
+" -------------- Overrides ---------------
+call SourceIfExists("~/.config/nvim/overrides.vim")
