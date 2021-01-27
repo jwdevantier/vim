@@ -28,6 +28,7 @@ let g:coc_global_extensions = [
     \ 'coc-ultisnips',
     \ 'coc-tsserver',
     \ 'coc-svelte',
+    \ 'coc-conjure',
   \ ]
 "
 " -----------------------------------------------------------------------

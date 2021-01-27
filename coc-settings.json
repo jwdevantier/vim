@@ -1,0 +1,11 @@
+{
+    "languageserver": {
+        "clojure": {
+            "command": "bash",
+            "args": ["-c", "clojure-lsp"],
+            "rootPatterns": ["deps.edn"],
+            "filetypes": ["clojure"],
+            "trace.server": "verbose"
+        }
+    }
+}
