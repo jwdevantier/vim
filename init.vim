@@ -20,6 +20,7 @@ call plug#begin('~/.local/share/nvim/bundle')
 " colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'overcache/NeoSolarized'
+Plug 'sainnhe/everforest'
 
 " better bottom bar
 Plug 'vim-airline/vim-airline'
@@ -92,9 +93,21 @@ set timeoutlen=300 " reduce time taken until help is shown
 " colorscheme gruvbox
 " let g:airline_theme='gruvbox'
 set termguicolors
-colorscheme NeoSolarized
-set background=light
-let g:airline_theme='solarized'
+
+" solarized light setup
+" colorscheme NeoSolarized
+" set background=light
+" let g:airline_theme='solarized'
+
+" gruvbox theme:
+colorscheme gruvbox
+set background=dark
+let g:airline_theme='gruvbox'
+
+" everforest (light)
+" colorscheme everforest
+" set background=light
+" let g:airline_theme='everforest'
 
 " airline tweaks -- show buffer list
 let g:airline#extensions#tabline#enabled=1
