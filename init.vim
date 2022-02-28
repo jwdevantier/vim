@@ -53,6 +53,12 @@ Plug 'sheerun/vim-polyglot'
 " (would recommend looking into vlime for cl)
 Plug 'Olical/conjure', {'tag': 'v4.12.0'}
 
+" racket support - ties in with conjure
+" PREREQ: `raco pkg install xrepl`
+Plug 'wlangstroth/vim-racket'
+" Plug 'scrooloose/syntastic'
+Plug 'kien/rainbow_parentheses.vim'
+
 " deoplete, fast async completion suggestion engine
 " -- using it for Clojure. Thus CoC uses LSP to provide
 "    code-navigation and analysis tips while deoplete provides
@@ -99,6 +105,8 @@ source $HOME/.config/nvim/config/ultisnips.vim
 source $HOME/.config/nvim/config/telescope.vim
 source $HOME/.config/nvim/config/coc.vim
 source $HOME/.config/nvim/config/clojure.vim
+" source $HOME/.config/nvim/config/syntastic.vim
+source $HOME/.config/nvim/config/rainbowparentheses.vim
 
 " --------------- KEY BINDS ------------------------
 "" previous buffer

@@ -6,6 +6,17 @@
             "rootPatterns": ["deps.edn"],
             "filetypes": ["clojure"],
             "trace.server": "verbose"
+        },
+        "racket": {
+            "command": "racket",
+            "args": [
+                "--lib",
+                "racket-langserver"
+            ],
+            "filetypes": [
+                "scheme",
+                "racket"
+            ]
         }
     }
 }
