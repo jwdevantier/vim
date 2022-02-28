@@ -47,7 +47,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 
 " support for svelte, the JS preprocessor framework thingie.
-Plug 'evanleck/vim-svelte', {'branch': 'main'}
+" Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 " conjure lisp plugin (clojure, scheme, racket, cl)
 " (would recommend looking into vlime for cl)
