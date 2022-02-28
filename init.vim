@@ -71,7 +71,7 @@ call plug#end()
 " explicitly set python 3 provider
 " this becomes useful when entering into virtualenvs where the neovim module
 " is not available -- this way, plugins which rely python3 continue to work
-let g:python3_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
 
 "The meaning of each of these options can be found by running
 " ':options' which lists all available options
