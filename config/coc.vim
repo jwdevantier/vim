@@ -19,15 +19,20 @@
 "
 " Or search for `python` plugins like so:
 " :CocList marketplace python
+"
+"
+" PLUGIN NOTES
+"
+" coc-clangd, install `clangd-11` (or later)
+" ensure `clangd` is in path, e.g. `export PATH=/usr/lib/llvm-11/bin:$PATH`
 " ------------------- PLUGINS -----------------------
 "  Found via ':CocList marketplace'
 let g:coc_global_extensions = [
     \ 'coc-marketplace',
+    \ 'coc-clangd',
     \ 'coc-git',
     \ 'coc-pyright',
     \ 'coc-ultisnips',
-    \ 'coc-tsserver',
-    \ 'coc-svelte',
     \ 'coc-conjure',
   \ ]
 "
