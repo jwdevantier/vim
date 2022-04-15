@@ -67,12 +67,16 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'Shougo/deoplete.nvim', {'for': 'clojure'}
 Plug 'ncm2/float-preview.nvim'
 
+" gdb, lldb debugger
+Plug 'cpiger/NeoDebug'
+
 call plug#end()
 
 " explicitly set python 3 provider
 " this becomes useful when entering into virtualenvs where the neovim module
 " is not available -- this way, plugins which rely python3 continue to work
-let g:python3_host_prog = '/usr/bin/python3'
+"let g:python3_host_prog = '/usr/bin/python3'
+let g:python3_host_prog = 'python3'
 
 "The meaning of each of these options can be found by running
 " ':options' which lists all available options
@@ -100,14 +104,14 @@ set termguicolors
 " let g:airline_theme='solarized'
 
 " gruvbox theme:
-colorscheme gruvbox
-set background=dark
-let g:airline_theme='gruvbox'
+" colorscheme gruvbox
+" set background=dark
+" let g:airline_theme='gruvbox'
 
 " everforest (light)
-" colorscheme everforest
-" set background=light
-" let g:airline_theme='everforest'
+colorscheme everforest
+set background=light
+let g:airline_theme='everforest'
 
 " airline tweaks -- show buffer list
 let g:airline#extensions#tabline#enabled=1
