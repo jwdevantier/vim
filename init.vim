@@ -70,6 +70,8 @@ Plug 'ncm2/float-preview.nvim'
 " gdb, lldb debugger
 Plug 'cpiger/NeoDebug'
 
+" git blame info on each line (:GitBlameToggle)
+Plug 'f-person/git-blame.nvim'
 call plug#end()
 
 " explicitly set python 3 provider
